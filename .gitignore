@@ -1,0 +1,8 @@
+# Ignora i file generati da PyCharm
+.idea/
+
+# Ignora i file di cache di Python
+__pycache__/
+
+# Ignora i file di log
+*.log
