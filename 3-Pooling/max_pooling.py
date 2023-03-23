@@ -19,5 +19,10 @@ out = torch.zeros((n, iC, oH, oW), dtype=torch.float32)
 
 for i in range(oH):
     for j in range(oW):
+        # manage stride and maximum
+        # for every image and for every channel
+        # in the right portion of the input
+        # use of amax instead of max because of the specified dim, on axis number 2 and 3
+        # maximum over the spatial axis, working independently on each channel
         out[:, :, i, j] = torch.amax(input[:, :, i*s:i*s + kH, j*s:j*s + kW], dim=[-1, -2])
 print(out)
