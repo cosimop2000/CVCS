@@ -1,11 +1,14 @@
 # CVCS
 Computer vision lab lectures exercises
 
-# 1
+# 0
 Introduction PyTorch
 
-# 2
+# 1
 Threshold and Otsu
 
-# 3
+# 2
 2D convolution variants
+
+# 3
+Max pooling
